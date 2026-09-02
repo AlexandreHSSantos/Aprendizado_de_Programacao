@@ -1,9 +1,12 @@
 programa
 {
 	funcao inicio(){
+	cadeia nome
 	real n1, p1, n2, p2, n3, n4, media1, media2, media3
-	
-	escreva("Vamos descobrir quanto foi a sua média")
+
+	escreva("Qual seu nome?")
+	leia(nome)
+	escreva(nome,", Vamos descobrir quanto foi a sua média")
 
 	escreva("\nQuanto você tirou na processual n1?")
 	leia(p1)
@@ -21,10 +24,10 @@ programa
 	leia(n2)
 
 	media2 = (n2*0.8 + p2*0.2)
-	escreva("Sua média na N2 foi de ", media2 ,", no semestre, você está com ", (media1 + media2)/2)
+	escreva(nome,"\nSua média na N2 foi de ", media2 ,", no semestre, você está com ", (media1 + media2)/2)
 
 	se ((media1 + media2)/2 >= 8.0){
-		escreva("Parabéns, você passou!")
+		escreva("Parabéns",nome,",você passou!")
 	}
 	senao{
 		escreva("\nVocê vai precisar de N3")
@@ -34,11 +37,11 @@ programa
 
 		se ((media1 + media2 + n3)/3 >= 5){
 			escreva("Sua média foi:", (media1 + media2 + n3)/3)
-			escreva("\nParabéns! você passou!")}
+			escreva("\nParabéns!", nome," você passou!")}
 
 		senao {
 			escreva("Sua média foi:", (media1 + media2 + n3)/3)
-			escreva("\nVocê vai precisar de N4")
+			escreva("\n",nome,", você vai precisar de N4")
 			
 
 			escreva("\nQual a sua nota da prova N4?")
@@ -49,7 +52,7 @@ programa
 				escreva("\nSua média foi:", (media1 + media2 + n3 + n4)/4)}
 
 			senao {
-				escreva("Tu reprovou na matéria, péssimo, vontade de cuspir na sua cara")
+				escreva(nome,"Tu reprovou na matéria, péssimo, vontade de cuspir na sua cara")
 				escreva("\nSua média foi:",(media1 + media2 + n3 + n4)/4)
 		}
 		}
@@ -61,7 +64,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 843; 
+ * @POSICAO-CURSOR = 574; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
