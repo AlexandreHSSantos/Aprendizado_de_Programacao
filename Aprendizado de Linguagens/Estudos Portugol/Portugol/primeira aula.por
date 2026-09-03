@@ -3,6 +3,7 @@ programa
 	funcao inicio(){
 	cadeia nome
 	real n1, p1, n2, p2, n3, n4, media1, media2, media3
+	inteiro n, nn, nnn
 
 	escreva("Qual seu nome?")
 	leia(nome)
@@ -57,14 +58,31 @@ programa
 		}
 		}
 	}
+	escreva("Escreva um número")
+	leia(n)
+
+	se (n % 2 == 0){
+		escreva("Esse número é par")
 	}
+	senao {
+		escreva("Esse número é ímpar\n")
 }
+	escreva("Escreva um número")
+	leia(nn)
+
+	escreva("Deseja multiplicar esse número por qual valor?")
+	leia(nnn)
+
+	escreva("O resultado é:", nn*nnn)
+
+	}
+	}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 574; 
+ * @POSICAO-CURSOR = 1550; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
