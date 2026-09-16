@@ -9,14 +9,21 @@ int main()
         printf("Número: %d\n", i);
     }
 
+    int opcao = -1;
 
+    while (opcao != 0) {
+        printf("\n--- MENU ---\n");
+        printf("1 - Receber bom dia\n");
+        printf("0 - Sair\n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &opcao);
 
+            if (opcao == 1){
+                printf("BOM DIA!");
+            }
 
-
-
-
- 
-
+    }
+    printf("Programa encerrado.\n");
 
     return 0;
 }
