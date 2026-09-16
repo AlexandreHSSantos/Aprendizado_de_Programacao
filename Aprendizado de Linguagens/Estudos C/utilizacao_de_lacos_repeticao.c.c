@@ -9,7 +9,7 @@ int main()
         printf("Número: %d\n", i);
     }
 
-    int opcao = -1;
+    int opcao = 0;
 
     while (opcao != 0) {
         printf("\n--- MENU ---\n");
@@ -25,5 +25,14 @@ int main()
     }
     printf("Programa encerrado.\n");
 
+    int pedra = 2;
+    do {
+        printf("\n--- Pedra ---\n");
+        printf("\n1 - Falar PEDRA");
+        printf("\n2 - Sair do Sistema");
+        scanf("%d", &pedra );
+    }
+        while (pedra != 2);
+    
     return 0;
 }
