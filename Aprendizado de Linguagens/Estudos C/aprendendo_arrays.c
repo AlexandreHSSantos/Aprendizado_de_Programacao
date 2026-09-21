@@ -29,6 +29,8 @@ int main()
     scanf("%s", nome);
 
     printf("Olá, %s! Seja bem-vindo\n", nome);
+
+    printf("Quero acessar o valor do %d", *valores);
     
     return 0;
 }
