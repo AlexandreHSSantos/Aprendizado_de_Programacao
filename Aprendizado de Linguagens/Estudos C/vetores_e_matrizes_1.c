@@ -9,7 +9,7 @@ int main() {
 
     };
 
-    printf("Notas dos alunos");
+    printf("Notas dos alunos\n");
 
     for (int i = 0; i < 3; i++) {
 
